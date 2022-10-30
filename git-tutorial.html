@@ -379,5 +379,96 @@
         <img src="branch5.png" alt="branch">
         <img src="branch6.png" alt="branch">
     </div>
+
+
+
+    <div class="container">
+        <center>
+            <h1><u>13- Edit Online</u></h1>
+        </center>
+        <p>You can edit files directly on GitHub in any of your repositories using the file editor.</p>
+        <h2>How to edit online</h2>
+        <ul>
+            <li>In your repository, browse to the file you want to edit.</li>
+            <li>In the upper right corner of the file view, click to open the file editor.</li>
+            <li>On the Edit file tab, make any changes you need to the file.</li>
+            <li>Above the new content, click Preview changes.</li>
+            <li>At the bottom of the page, type a short, meaningful commit message that describes the change you made to the file. You
+            can attribute the commit to more than one author in the commit message. For more information, see "Creating a commit
+            with multiple co-authors."</li>
+            <li>If you have more than one email address associated with your account on GitHub.com, click the email address drop-down
+            menu and select the email address to use as the Git author email address. Only verified email addresses appear in this
+            drop-down menu. If you enabled email address privacy, then <username>@users.noreply.github.com is the default commit
+                author email address. For more information, see "Setting your commit email address."</li>
+            <li>Click Propose file change.</li>
+    
+        </ul>
+        <img src="editonline.png" alt="editonline">
+        
+    </div>
+
+
+
+    <div class="container">
+        <center>
+            <h1><u>14- Merge Conflict</u></h1>
+        </center>
+        <p>
+            What is a Git Merge Conflict? A merge conflict is an event that takes place when Git is unable to automatically resolve
+            differences in code between two commits. Git can merge the changes automatically only if the commits are on different
+            lines or branches.
+        </p>
+        <img src="conflict1.png" alt="conflict">
+        <img src="conflict2.png" alt="conflict">
+
+        <h2>Types of Git Merge Conflicts</h2>
+        <h3>1- Starting the Merge Process:</h3>
+        <p>
+            If there are changes in the working directory’s stage area for the current project, merging won’t start.
+            
+            In this case, conflicts happen due to pending changes that need to be stabilized using different Git commands.
+        </p>
+        <h3>2- During the Merge Process</h3>
+        <p>
+            The failure during the merge process indicates that there is a conflict between the local branch and the branch being
+            merged.
+            
+            In this case, Git resolves as much as possible, but there are things that have to be resolved manually in the conflicted
+            files.
+            
+            We will now go over resolving merge conflicts in Git.
+        </p>
+
+
+        <h1><u><center>How to Resolve Merge conflict in Git</center></u></h1>
+        <h3>There are a few steps that could reduce the steps needed to resolve merge conflicts in Git.</h3>
+        <ul>
+            <li>The easiest way to resolve a conflicted file is to open it and make any necessary changes</li>
+            <li>After editing the file, we can use the git add a command to stage the new merged content</li>
+            <li>The final step is to create a new commit with the help of the git commit command</li>
+            <li>Git will create a new merge commit to finalize the merge</li>
+        </ul>
+
+
+        <h3>Git Commands to Resolve Conflicts</h3>
+        <ul>
+            <li>git log --merge</li>
+            <p>The git log --merge command helps to produce the list of commits that are causing the conflict</p>
+            <li>git diff</li>
+            <p>The git diff command helps to identify the differences between the states repositories or files</p>
+            <li>git reset --mixed</li>
+            <p>The git reset --mixed command is used to undo changes to the working directory and staging area</p>
+            <li>git merge --abort</li>
+            <p>The git merge --abort command helps in exiting the merge process and returning back to the state before the merging
+            began</p>
+            <li>git reset</li>
+            <p>The git reset command is used at the time of merge conflict to reset the conflicted files to their original state</p>
+        
+        </ul>
+
+        <img src="conflict4.png" alt="conflict">
+        <img src="conflict3.png" alt="conflict">
+        <img src="conflict 5.png" alt="conflict">
+    </div>
 </body>
 </html>
